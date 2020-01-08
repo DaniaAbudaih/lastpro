@@ -1,0 +1,114 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="subnav">
+          <button class="subnavbtn">برامج الدبلوم <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#company">Company</a>
+            <a href="#team">Team</a>
+            <a href="#careers">Careers</a>
+          </div>
+        </div> 
+        <div class="subnav">
+          <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+          <div class="subnav-content">
+            <a href="#bring">Bring</a>
+            <a href="#deliver">Deliver</a>
+            <a href="#package">Package</a>
+            <a href="#express">Express</a>
+          </div>
+        </div> 
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="our.jpg" style="width:95% ; padding-left:2em">
+  <center>
+  <div class="text">
+  <h3>رؤيتنا</h3>
+  <div>
+  تحقيق أعلى درجات الإتقان والجودة في مجال التدريب والتطوير.
+
+تعتمد ®PRAVO ضبط تكاليف التدريب لتلامس الإحتياجات الفعلية لمعظم الشرائح والفئات الاقتصادية المختلفة لتحقيق اهدافهم التنافسية. نحن نعمل دوما من أجل أن تصبح ®PRAVO المرجع المعتمد للبرامج والدورات التدريبية التي تعتمدها العديد من الشركات والمؤسسات والقطاعات الحكومية والخاصة.
+</div>
+</div>
+</center>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="mission.jpg" style="width:100%">
+  <div class="text">
+  <h3>رسالتنا</h3>
+  <div>
+  تقديم مجموعة شاملة من خدمات التدريب والحلول التنموية للأفراد والمهنيين في الشركات محليا وإقليميا.
+تنمية معرفة الأفراد ومهاراتهم وقدراتهم واتجاهاتهم في مجالات مختلفة.
+تخطيط القوى العاملة وتنميتها مما يؤدي إلى تحقيق التنمية الاقتصادية والاجتماعية.
+الامتثال للمعايير الوطنية والدولية في التعليم والتدريب لضمان الجودة.
+تم تصميم برامج الدبلوم التدريبي والدورات التدريبية في®PRAVO بطريقة فعّالة لتمنح المتدربين المعرفة الضرورية والمهارات اللازمة للإرتقاء والتواصل ضمن بيئة العمل.</div>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="teame.jpg" style="width:100%">
+  <div class="text">
+  <div>
+  يتم التدريب في أكاديمية ®PRAVOمن قبل المتخصصين الذين تم اختيارهم بعناية ليس فقط لمؤهلاتهم الأكاديمية والمهنية وقدرتهم على التدريب، ولكن أيضا لخبرتهم الكبيرة سواء في الأردن أو في الخارج. هذا يعني أنك سوف تحصل على تدريب ليس فقط من الممارسات الحديثة في الأردن ولكن أيضا من منظور دولي أساسي. وهذا يعني أيضا أن الموضوعات المدرجة خلال التدريب سوف تكون ذات صلة مباشرة لمطالبك واحتياجاتك الحقيقية في مكان العمل والتي من شأنها أن تحقق النتيجة المرجوة من قبل الإدارة العليا للمؤسسات المختلفة.</div>
+</div>
+
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+
+</script>
+
+</body>
+</html>
